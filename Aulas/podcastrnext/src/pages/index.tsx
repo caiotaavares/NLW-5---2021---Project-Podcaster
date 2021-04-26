@@ -97,9 +97,10 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
 
   return (
     <div className={styles.homepage}>
-
       <Head>
+
         <title>Home | Podcastr</title>
+
       </Head>
 
       <section className={styles.latestEpisodes}>
@@ -108,6 +109,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
         <ul>
           {latestEpisodes.map((episode, index) => {
             return (
+              
               <li key={episode.id} >            
                 <Image
                 width={192}
